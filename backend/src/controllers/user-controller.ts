@@ -42,7 +42,7 @@ export const userSignup = async (req: Request, res: Response, next: NextFunction
             domain: "localhost",
             expires, 
             httpOnly: true,
-            
+            signed: true,
         })
 
         return res.status(201).json({message: "OK", id: user._id.toString() })
@@ -83,7 +83,7 @@ export const userLogin = async (req: Request, res: Response, next: NextFunction)
             domain: "localhost",
             expires, 
             httpOnly: true,
-            
+            signed: true,
         })
 
         return res.status(200).json({message: "OK", id: user._id.toString() })
