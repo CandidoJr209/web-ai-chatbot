@@ -5,3 +5,7 @@ html, body{
   color: white;
   font-family:'Courier New', Courier, monospace
 }
+
+.image-inverted {
+  filter: invert(100%);
+}
